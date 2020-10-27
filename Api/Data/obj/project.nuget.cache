@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tf85j3Wb9kMCycKC6Xcm32HB8+3bs3pnu403YwDyIYlDOpYjZBjCkr4uVff8MM0Sz74sWzgN+THslN+r/vSVZg==",
+  "dgSpecHash": "ox5SJ7j6O22ishRDBFEMWthQVhMfX2fsvOTz+30TOwCT0cz1q0bQwDEQW659qM/FnnsERP6ehiCQoBuYE6dSRw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\qubad\\Desktop\\Api\\Data\\Data.csproj",
+  "projectFilePath": "C:\\Users\\qubad\\Desktop\\Api-Angular-Project\\Api\\Data\\Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\qubad\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\qubad\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

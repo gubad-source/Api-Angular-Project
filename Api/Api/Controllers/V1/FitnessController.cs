@@ -39,5 +39,29 @@ namespace Api.Controllers.V1
             var cardResources = _mapper.Map<IEnumerable<Cards>, IEnumerable<CardsResource>>(cards);
             return Ok(cardResources);
         }
+        [Route("teams")]
+        [HttpGet]
+        public async Task<IActionResult> GetTeam()
+        {
+            var teams = await _unitOfWork.Team.GetAllAsync();
+            var teamResources = _mapper.Map<IEnumerable<Team>, IEnumerable<TeamResource>>(teams);
+            return Ok(teamResources);
+        }
+        [Route("firsts")]
+        [HttpGet]
+        public async Task<IActionResult> GetFirst()
+        {
+            var firsts = await _unitOfWork.First.GetAllAsync();
+            var firstResources=_mapper.Map<IEnumerable<First>,IEnumerable<FirstResource>>(firsts);
+            return Ok(firstResources);
+        }
+        [Route("pricings")]
+        [HttpGet]
+        public async Task<IActionResult> GetPricing()
+        {
+            var pricings = await _unitOfWork.Pricing.GetAllAsync();
+            var pricingResources = _mapper.Map<IEnumerable<Pricing>, IEnumerable<PricingResource>>(pricings);
+            return Ok(pricingResources);
+        }
     }
 }

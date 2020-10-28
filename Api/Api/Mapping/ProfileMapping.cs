@@ -16,6 +16,12 @@ namespace Api.Mapping
             CreateMap<Slider,SliderResource>();
             CreateMap<Cards, CardsResource>()
                      .ForMember(d => d.Photo, opt => opt.MapFrom(src=>BaseUrl+src.Photo));
+            CreateMap<Team, TeamResource>()
+                     .ForMember(d => d.Photo, opt => opt.MapFrom(src => BaseUrl + src.Photo));
+            CreateMap<First, FirstResource>()
+                     .ForMember(d => d.Photo, opt => opt.MapFrom(src => BaseUrl + src.Photo));
+            CreateMap<Pricing, PricingResource>()
+                   .ForMember(d => d.Photo, opt => opt.MapFrom(src => BaseUrl + src.Photo));
         }
     }
 }

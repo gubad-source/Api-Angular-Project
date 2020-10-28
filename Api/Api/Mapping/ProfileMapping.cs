@@ -22,6 +22,12 @@ namespace Api.Mapping
                      .ForMember(d => d.Photo, opt => opt.MapFrom(src => BaseUrl + src.Photo));
             CreateMap<Pricing, PricingResource>()
                    .ForMember(d => d.Photo, opt => opt.MapFrom(src => BaseUrl + src.Photo));
+            CreateMap<Services, ServicesResource>()
+                   .ForMember(d => d.Photo, opt => opt.MapFrom(src => BaseUrl + src.Photo));
+            CreateMap<Fitness, FitnessResource>()
+                  .ForMember(d => d.Photo, opt => opt.MapFrom(src => BaseUrl + src.Photo));
+            CreateMap<Schedule, ScheduleResource>()
+                .ForMember(d => d.Photo, opt => opt.MapFrom(src => BaseUrl + src.Photo));
         }
     }
 }
